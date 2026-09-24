@@ -1,0 +1,424 @@
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Container principal das seções */
+section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+/* Texto */
+p {
+    margin-bottom: 15px;
+}
+
+/* Links */
+a {
+    color: #d8b4fe;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Foco visível para navegação por teclado */
+a:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   CABEÇALHO E MENU
+   ========================================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: #171717;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+nav {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    padding: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d8b4fe;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   APRESENTAÇÃO
+   ========================================================= */
+
+#inicio {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+}
+
+#inicio p:first-child {
+    color: #d8b4fe;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+#inicio h1 {
+    color: #ffffff;
+}
+
+#inicio h2 {
+    color: #d8b4fe;
+    font-size: 1.5rem;
+    max-width: 700px;
+}
+
+#inicio p {
+    max-width: 700px;
+}
+
+
+/* =========================================================
+   BOTÕES E LINKS DE AÇÃO
+   ========================================================= */
+
+#inicio a,
+#projetos article a,
+#curriculo a {
+    display: inline-block;
+
+    margin-top: 10px;
+    padding: 12px 20px;
+
+    background-color: #8b5cf6;
+    color: #ffffff;
+
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+#inicio a:hover,
+#projetos article a:hover,
+#curriculo a:hover {
+    background-color: #a78bfa;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   SOBRE MIM
+   ========================================================= */
+
+#sobre {
+    border-top: 1px solid #333333;
+}
+
+#sobre p {
+    max-width: 850px;
+}
+
+
+/* =========================================================
+   FORMAÇÃO
+   ========================================================= */
+
+#formacao {
+    border-top: 1px solid #333333;
+}
+
+#formacao article {
+    background-color: #1c1c1c;
+
+    border: 1px solid #383838;
+    border-left: 4px solid #8b5cf6;
+
+    padding: 20px;
+    margin-bottom: 15px;
+
+    border-radius: 8px;
+}
+
+#formacao article h3 {
+    color: #d8b4fe;
+}
+
+
+/* =========================================================
+   COMPETÊNCIAS
+   ========================================================= */
+
+#competencias {
+    border-top: 1px solid #333333;
+}
+
+#competencias > div {
+    background-color: #1c1c1c;
+
+    border: 1px solid #383838;
+    border-radius: 10px;
+
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+#competencias h3 {
+    color: #d8b4fe;
+}
+
+#competencias ul {
+    list-style-position: inside;
+}
+
+#competencias li {
+    margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   PROJETOS
+   ========================================================= */
+
+#projetos {
+    border-top: 1px solid #333333;
+}
+
+/* Cartão do projeto */
+#projetos article {
+    background-color: #1c1c1c;
+
+    border: 1px solid #383838;
+    border-radius: 12px;
+
+    padding: 25px;
+
+    max-width: 700px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+#projetos article:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+#projetos article h3 {
+    color: #d8b4fe;
+}
+
+
+/* =========================================================
+   CURRÍCULO
+   ========================================================= */
+
+#curriculo {
+    border-top: 1px solid #333333;
+}
+
+#curriculo p {
+    max-width: 700px;
+}
+
+
+/* =========================================================
+   CONTATO
+   ========================================================= */
+
+#contato {
+    border-top: 1px solid #333333;
+}
+
+#contato ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#contato a {
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    border: 1px solid #8b5cf6;
+    border-radius: 8px;
+
+    color: #d8b4fe;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+#contato a:hover {
+    background-color: #8b5cf6;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+footer {
+    background-color: #171717;
+
+    border-top: 1px solid #333333;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    color: #cccccc;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/*
+   Em telas menores, o menu passa a ocupar mais de uma linha
+   e os textos ficam menores para melhorar a leitura.
+*/
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    section {
+        width: 88%;
+        padding: 60px 0;
+    }
+
+    #inicio {
+        min-height: 80vh;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    #inicio h2 {
+        font-size: 1.3rem;
+    }
+
+    #contato ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* =========================================================
+   TELAS MUITO PEQUENAS
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    #projetos article,
+    #competencias > div,
+    #formacao article {
+        padding: 20px;
+    }
+}
